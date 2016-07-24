@@ -108,6 +108,7 @@ autocmd InsertLeave * set noautochdir | execute 'cd' fnameescape(save_cwd)
 syntax enable
 set background=dark
 colorscheme solarized
+set guifont=Sauce\ Code\ Pro\ Nerd\ Font\ Complete\ Mono:h12
 
 " https://github.com/scrooloose/nerdtree
 map - :NERDTreeToggle<CR>
@@ -118,9 +119,12 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 map <leader> <Plug>(easymotion-prefix)
 nmap <leader>s <Plug>(easymotion-overwin-f2)
 
+
 " https://github.com/Yggdroot/indentLine
 let g:indentLine_char='│'
 
+
+" https://github.com/Shougo/neosnippet.vim
 let g:neosnippet#snippets_directory='~/.config/nvim/repos/github.com/Shougo/neosnippet-snippets/neosnippets'
 let g:neosnippet#enable_snipmate_compatibility = 1
 let g:neosnippet#expand_word_boundary = 1
@@ -144,6 +148,7 @@ let g:deoplete#omni_patterns = {}
 let g:deoplete#omni_patterns.go = '[^. *\t]\.\w*'
 
 
+" https://github.com/Shougo/unite.vim
 " unite ---------------------------------------------------------------------{{{
 "
 nnoremap <silent> <C-p> :Unite file buffer -auto-resize -start-insert -direction=botright file_rec/neovim<CR>
