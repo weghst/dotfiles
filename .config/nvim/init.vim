@@ -48,8 +48,8 @@ call dein#end()
 
 
 " 设置文件编码
-set enc  =utf-8
-set fenc =utf-8
+set enc  =utf-8 nobomb
+set fenc =utf-8 nobomb
 
 " Rebind <Leader> key
 " I like to have it here because it is easier to reach than the default and
